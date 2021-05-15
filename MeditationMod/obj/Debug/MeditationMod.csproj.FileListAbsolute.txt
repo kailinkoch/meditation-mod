@@ -1,0 +1,6 @@
+/Users/kailinkoch/Projects/MeditationMod/MeditationMod/bin/Debug/MeditationMod.dll
+/Users/kailinkoch/Projects/MeditationMod/MeditationMod/bin/Debug/MeditationMod.pdb
+/Users/kailinkoch/Projects/MeditationMod/MeditationMod/obj/Debug/MeditationMod.csprojAssemblyReference.cache
+/Users/kailinkoch/Projects/MeditationMod/MeditationMod/obj/Debug/MeditationMod.csproj.CoreCompileInputs.cache
+/Users/kailinkoch/Projects/MeditationMod/MeditationMod/obj/Debug/MeditationMod.dll
+/Users/kailinkoch/Projects/MeditationMod/MeditationMod/obj/Debug/MeditationMod.pdb

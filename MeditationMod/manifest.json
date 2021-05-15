@@ -1,0 +1,10 @@
+﻿{
+  "Name": "MeditationMod",
+  "Author": "Hermux Tantamoq",
+  "Version": "1.0.0",
+  "Description": "Gain energy through meditation",
+  "UniqueID": "HermuxTantamoq.MeditationMod",
+  "EntryDll": "MeditationMod.dll",
+  "MinimumApiVersion": "3.0.0",
+  "UpdateKeys": []
+}
