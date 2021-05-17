@@ -1,6 +1,8 @@
 ﻿using System;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Input;
 using StardewModdingAPI;
+using StardewModdingAPI.Enums;
 using StardewModdingAPI.Events;
 using StardewModdingAPI.Utilities;
 using StardewValley;
@@ -17,7 +19,8 @@ namespace MeditationMod
         /// <param name="helper">Provides simplified APIs for writing mods.</param>
         public override void Entry(IModHelper helper)
         {
-            helper.Events.Input.ButtonPressed += this.OnButtonPressed;
+            //helper.Events.Input.ButtonPressed += this.OnButtonPressed;
+            helper.Events.Input.ButtonPressed += OnAButtonPressed;
         }
 
 
@@ -35,6 +38,20 @@ namespace MeditationMod
 
             // print button presses to the console window
             this.Monitor.Log($"{Game1.player.Name} pressed {e.Button}.", LogLevel.Debug);
+
+        }
+
+        private void OnAButtonPressed(object sender, ButtonPressedEventArgs a)
+        {
+
+            bool isAPressed = this.Helper.Input.IsDown(SButton.A);
+
+            // ignore if player hasn't loaded a save yet
+            if (!Context.IsWorldReady)
+                return;
+
+            // print button presses to the console window
+            this.Monitor.Log($"The a button pressed state is {isAPressed}.", LogLevel.Debug);
         }
     }
 }
